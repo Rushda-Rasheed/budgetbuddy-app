@@ -1,0 +1,40 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.check-class{
+    background-color: aliceblue;
+} */
+
+
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utility class */
+.check-class {
+  background-color: aliceblue;
+}
+
+/* Print-specific styles */
+@media print {
+  .page-break {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  /* Optional: Hide screen-only content */
+  .no-print {
+    display: none !important;
+  }
+
+  /* Optional: Show print-only content */
+  .print-only {
+    display: block !important;
+  }
+}
